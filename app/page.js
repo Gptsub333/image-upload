@@ -12,6 +12,10 @@ export default function Page() {
   const [resultText, setResultText] = useState("")
   const inputRef = useRef(null)
 
+
+  // AI assisted tongue scanner
+
+
   const onDrop = useCallback((e) => {
     e.preventDefault()
     e.stopPropagation()
@@ -85,7 +89,7 @@ export default function Page() {
     <main className="min-h-screen w-full px-4 py-8 md:py-12 bg-white">
       <div className="mx-auto max-w-5xl">
         <header className="mb-6">
-          <h1 className="text-2xl md:text-3xl font-semibold text-black">Image Upload to Backend</h1>
+          <h1 className="text-2xl md:text-3xl font-semibold text-black">AI assisted tongue scanner</h1>
           <p className="text-sm text-gray-500 mt-1">
             Upload an image on the left. We&apos;ll POST it to the backend and show the text response on the right.
           </p>
